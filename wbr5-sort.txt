@@ -1,0 +1,33 @@
+Wbridge5    Donne: c:\users\dell\pycharmprojects\bridgeproject\current_wbridge5_deal.pbn  Partie:1  27.01.2024
+East-West vulnerable
+Dealer East
+                   North
+                S: A J10 7
+                H: 8 7
+                D: K Q 6 2
+                C: Q 8 3
+    West                         East
+S: K 5                        S: Q 9 2
+H: J 6 5 4 3 2                H: K Q
+D: J 3                        D: 9 4
+C: J10 7                      C: A K 9 5 4 2
+                    South
+                S: 8 6 4 3
+                H: A10 9
+                D: A10 8 7 5
+                C: 6
+
+
+    BOARD 2
+Ouest 
+Nord 
+Est 
+Sud 
+
+
+ Bidding:     Round  North  East   South  West
+                 1            -      -      -     
+                 2    1D      -     1S      -     
+                 3    2S      -     3S      -     
+                 4     -      -     
+

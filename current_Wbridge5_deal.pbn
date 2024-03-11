@@ -1,0 +1,30 @@
+% PBN 2.1 
+% File converted with "LinToPbnConverter" (Version 1.3)
+% (c) J.L PELISSON 2009  : pelissonjl@aol.com
+% Free for a non commercial use only 
+% 
+[Board "2"]
+[West ""]
+[North ""]
+[East ""]
+[South ""]
+[Room "Open"]
+[Dealer "E"]
+[Deal "E:Q92.KQ.94.AK9542 8643.AT9.AT875.6 K5.J65432.J3.JT7 AJT7.87.KQ62.Q83"]
+{
+                   Nord
+                   AVX7
+                   87
+                   RD62
+                   D83
+  Ouest                            Est
+  R5                               D92
+  V65432                           RD
+  V3                               94
+  VX7                              AR9542
+                   Sud
+                   8643
+                   AX9
+                   AX875
+                   6
+}
