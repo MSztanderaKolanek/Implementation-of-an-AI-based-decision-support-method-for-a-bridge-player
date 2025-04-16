@@ -193,7 +193,8 @@ class Learning:
                 exit()
 
         for i, episode in enumerate(range(episodes)):
-            data = read_csv("../test.csv")
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            data = read_csv(os.path.join(base_dir, "test.csv"))
             current_coded_hands = data['deal'][i].split(',')
             current_max_bids = data['maximum_contracts'][i]
             deck = Deck()
