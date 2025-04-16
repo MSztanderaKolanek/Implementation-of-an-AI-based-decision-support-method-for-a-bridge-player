@@ -1,3 +1,0 @@
-Liczba osób fizycznych (1/2) - 2
-Czy pokazywać sugestie systemu? (Tak/Nie) - Nie
-Czy pokazywać maksymalne kontrakty możliwe do wygrania? (Tak/Nie) - Tak
