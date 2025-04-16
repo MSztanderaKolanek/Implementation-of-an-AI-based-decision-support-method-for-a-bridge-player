@@ -58,7 +58,6 @@ class Player:
         return colors_and_points
 
     def calculate_points_and_colors(self):
-        # print(len(self.hand))
         points = 0
         clubs = 0
         diamonds = 0
