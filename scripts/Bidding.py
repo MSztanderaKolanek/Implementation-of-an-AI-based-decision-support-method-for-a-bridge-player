@@ -166,12 +166,12 @@ class Bidding:
         # UWAGA bidding_course zawiera tylko odzywki licytujacego i partnera
 
         agent = Agent()
-        with open(f"model2", 'rb') as f:
+        with open(f"../model2", 'rb') as f:
             weights, episode = pickle.load(f)
         # rozdanie kart
         deck = Deck()
         if self.show_max_bids:
-            data = read_csv("data.csv")
+            data = read_csv("../data.csv")
             random_deal = random.randint(1, 5000)
             current_coded_hands = data['deal'][random_deal].split(',')
             current_max_bids = data['maximum_contracts'][random_deal]

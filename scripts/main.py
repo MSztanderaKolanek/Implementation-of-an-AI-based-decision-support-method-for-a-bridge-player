@@ -10,7 +10,7 @@ Player_2 = Player("E")
 Player_3 = Player("S", is_computer=True, computer_type='algorithm')
 Player_4 = Player("W")
 
-with open('configuration.txt', 'r', encoding='utf-8') as file:
+with open('../configuration.txt', 'r', encoding='utf-8') as file:
     current_configuration = file.readlines()
     human_players, suggestions, max_bids = [conf.strip().lower().split(' - ')[1] for conf in current_configuration]
     if human_players not in ['1', '2'] or suggestions not in ['tak', 'nie'] or max_bids not in ['tak', 'nie']:

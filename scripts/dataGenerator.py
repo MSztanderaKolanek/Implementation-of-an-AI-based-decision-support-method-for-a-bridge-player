@@ -60,7 +60,7 @@ for i in range(1):
     # players = [playerS, playerW, playerN, playerE]
     players = [playerS, playerW, playerN]
     result = lin_file_creator(players)
-    with open('current_deal.lin', 'w') as file:
+    with open('../current_deal.lin', 'w') as file:
         file.write(result)
     result = result[10:63]
 
@@ -86,7 +86,7 @@ for i in range(1):
     if len(analised_contracts) > 5 or analised_contracts == "*****" or len(analised_contracts) < 5:
         continue
 
-    with open('data.csv', 'a', newline='') as file:
+    with open('../data.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         # field = ["deal", "maximum_contracts"]
         # writer.writerow(field)

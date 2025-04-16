@@ -174,6 +174,7 @@ class Learning:
         if testing:
             pass
         for i in range(2):   # 2 - tyle jest graczy komputerowych, uczących się
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             if learn:
                 if i == 0:
                     weights1 = np.array([np.random.uniform(-0.1, 0.1)
@@ -182,8 +183,8 @@ class Learning:
                     weights2 = np.array([np.random.uniform(-0.1, 0.1)
                                          for _ in range(agent2.get_feature_vector_length())])
 
-            elif os.path.isfile(f"model{i+1}"):
-                with open(f"model{i+1}", 'rb') as f:
+            elif os.path.isfile(os.path.join(base_dir, f"model{i + 1}")):
+                with open(os.path.join(base_dir, f"model{i + 1}"), 'rb') as f:
                     if i == 0:
                         weights1, episode1 = pickle.load(f)
                     else:
@@ -193,7 +194,7 @@ class Learning:
                 exit()
 
         for i, episode in enumerate(range(episodes)):
-            data = read_csv("test.csv")
+            data = read_csv("../test.csv")
             current_coded_hands = data['deal'][i].split(',')
             current_max_bids = data['maximum_contracts'][i]
             deck = Deck()
@@ -284,7 +285,8 @@ class Learning:
             print(f"Episode: {episode}, Weights: {current_weights}")
             for i in range(2):   # computer players = 2
                 if save:
-                    with open(os.path.join(f"model{i+1}"), "wb") as f:
+                    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                    with open(os.path.join(base_dir, f"model{i + 1}"), "wb") as f:
                         data = (weights[i], episode)
                         pickle.dump(data, f)
             if testing:

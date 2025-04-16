@@ -5,12 +5,12 @@ from pandas import *
 
 
 make_deal = False
-coded_deals_and_max_bids = read_csv("test.csv")
+coded_deals_and_max_bids = read_csv("../test.csv")
 coded_deals = coded_deals_and_max_bids['deal']
 max_contracts = coded_deals_and_max_bids['maximum_contracts']
 if make_deal:
     for k in range(0):
-        with open('current_Wbridge5_deal.lin', 'w') as file:
+        with open('../current_Wbridge5_deal.lin', 'w') as file:
             current_lin = 'qx|o2|md|4' + coded_deals_and_max_bids['deal'][k] + '|rh||ah||nv|n|pg||'
             file.write(current_lin)
 
@@ -50,7 +50,7 @@ if make_deal:
         pyautogui.hotkey('enter')
         time.sleep(2)
 
-        with open('wbr5-sort.txt', 'r') as f:
+        with open('../wbr5-sort.txt', 'r') as f:
             content = f.readlines()
 
         potential_contracts = [content[-3][22:25], content[-3][36:39], content[-2][22:25], content[-2][36:39]]
@@ -80,7 +80,7 @@ if make_deal:
         else:
             bid = 'pas'
         # print(bid)
-        with open('contractsWbridge5.csv', 'a', newline='') as file:
+        with open('../contractsWbridge5.csv', 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([bid, max_contracts[k]])
             # print("Added")
