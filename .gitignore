@@ -1,27 +1,31 @@
-# Python junk
+# Python
 __pycache__/
 *.py[cod]
 
-# Virtual envs
+# Virtual env
 venv/
 .env/
 
-# Build artifacts
+# Build tools
 build/
 dist/
 *.egg-info/
+*.spec
 *.exe
 
-# Config and intermediate files
-*.log
+# Data / config
 *.csv
+*.pbn
 *.lin
 configuration.txt
+
+# Logs and temp
+*.log
 
 # IDEs
 .vscode/
 .idea/
 
-# OS junk
+# OS clutter
 .DS_Store
 Thumbs.db
