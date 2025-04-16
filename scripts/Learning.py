@@ -46,7 +46,6 @@ class Learning:
         current_names = []
         current_color = ['Pik', 'Kier', 'Karo', 'Trefl']
         for char in coded_cards:
-            # print(char)
             if char not in ['D', 'H', 'C']:
                 if char == 'A':
                     char = "As"
