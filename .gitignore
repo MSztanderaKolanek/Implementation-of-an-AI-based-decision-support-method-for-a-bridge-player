@@ -15,6 +15,7 @@ dist/
 
 # Data / config
 *.csv
+!test.csv
 *.pbn
 *.lin
 configuration.txt
