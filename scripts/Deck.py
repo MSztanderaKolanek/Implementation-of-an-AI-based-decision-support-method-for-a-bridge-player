@@ -1,4 +1,4 @@
-from Card import Card
+from scripts.Card import Card
 import random
 
 

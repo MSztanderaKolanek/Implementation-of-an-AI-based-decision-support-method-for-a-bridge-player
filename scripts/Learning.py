@@ -1,6 +1,6 @@
-from Player import Player
-from Deck import Deck
-from Agent import Agent
+from scripts.Player import Player
+from scripts.Deck import Deck
+from scripts.Agent import Agent
 import numpy as np
 import pickle
 import os

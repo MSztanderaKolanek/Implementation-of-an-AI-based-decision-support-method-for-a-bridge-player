@@ -8,8 +8,8 @@ import pyperclip
 import time
 import os
 import csv
-from Deck import Deck
-from Player import Player
+from scripts.Deck import Deck
+from scripts.Player import Player
 
 
 def character_converter(card_name):

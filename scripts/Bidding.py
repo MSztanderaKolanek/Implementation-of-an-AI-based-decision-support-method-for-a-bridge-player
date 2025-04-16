@@ -5,7 +5,7 @@ from colorama import init as colorama_init
 from colorama import Fore
 from colorama import Style
 import numpy as np
-from Agent import Agent
+from scripts.Agent import Agent
 import pickle
 
 
