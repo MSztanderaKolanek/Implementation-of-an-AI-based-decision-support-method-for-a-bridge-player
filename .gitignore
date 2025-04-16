@@ -1,20 +1,27 @@
-# Byte-compiled / optimized / DLL files
+# Python junk
 __pycache__/
 *.py[cod]
 
-# Virtual environment
+# Virtual envs
 venv/
 .env/
 
-# Packaging stuff
+# Build artifacts
 build/
 dist/
 *.egg-info/
+*.exe
 
-# IDE settings
+# Config and intermediate files
+*.log
+*.csv
+*.lin
+configuration.txt
+
+# IDEs
 .vscode/
 .idea/
 
-# Logs and junk
-*.log
+# OS junk
 .DS_Store
+Thumbs.db
